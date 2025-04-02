@@ -1,16 +1,16 @@
-<header class="flex flex-wrap items-center justify-between border-b border-gray-200">
+<header class="flex flex-wrap items-center justify-between border-b border-gray-200 headerLTR">
   <a routerLink="/">
     <img src="./MediCareLogo.png" alt="Logo" class="w-48 p-2">
   </a>
   <div class="flex flex-wrap p-2 text-blue-950">
     <ul class="flex">
-      <li class="p-2 font-semibold hover:bg-gray-200 rounded-lg cursor-pointer" routerLink="/register">Register</li>
-      <li class="p-2 font-semibold hover:bg-gray-200 rounded-lg cursor-pointer" routerLink="/login">Login</li>
-      <li class="p-2 font-semibold hover:bg-gray-200 rounded-lg cursor-pointer" routerLink="/contact">Contact Us</li>
+      <li class="p-2 font-semibold hover:bg-gray-200 rounded-lg cursor-pointer" routerLink="/register">{{'Header.Register' | translate}}</li>
+      <li class="p-2 font-semibold hover:bg-gray-200 rounded-lg cursor-pointer" routerLink="/login">{{'Header.Login' | translate}}</li>
+      <li class="p-2 font-semibold hover:bg-gray-200 rounded-lg cursor-pointer" routerLink="/contact">{{'Header.Contact Us' | translate}}</li>
     </ul>
-    <select  class="p-2 font-semibold focus:outline-none">
-      <option value="en">English</option>
-      <option value="ar">Arabic</option>
+    <select (change)="change($event)"  class="p-2 font-semibold focus:outline-none">
+      <option value="en">{{'Header.English' | translate}}</option>
+      <option value="ar">{{'Header.Arabic' | translate}}</option>
     </select>
   </div>
 </header>
