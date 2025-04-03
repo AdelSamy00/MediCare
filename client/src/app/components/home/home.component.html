@@ -1,1 +1,9 @@
-<p>home works!</p>
+<section>
+  <owl-carousel-o [options]="customOptions" class="hidden sm:block">
+    @for (image of images; track $index) {
+      <ng-template carouselSlide>
+        <img [src]="image.url" alt="Slide Image" class="h-[800px] object-cover">
+      </ng-template>
+    }
+  </owl-carousel-o>
+</section>

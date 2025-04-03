@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^19.1.0",
+    "@angular/animations": "^19.2.4",
     "@angular/common": "^19.1.0",
     "@angular/compiler": "^19.1.0",
     "@angular/core": "^19.1.0",
@@ -26,6 +26,7 @@
     "@ngx-translate/http-loader": "^16.0.1",
     "@popperjs/core": "^2.11.8",
     "@tailwindcss/postcss": "^4.0.17",
+    "animate.css": "^4.1.1",
     "express": "^4.18.2",
     "jwt-decode": "^4.0.0",
     "ngx-owl-carousel-o": "^19.0.0",
